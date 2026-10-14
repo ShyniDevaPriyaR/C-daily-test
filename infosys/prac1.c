@@ -6,12 +6,7 @@ int main() {
 
     scanf("%d", &n);
 
-    // Handle negative input
 
-    // Repeat while n > 0
-    // Extract the last digit
-    // Add the digit to sum
-    // Remove the last digit
     if(n<0)
     {
         n=-n;
