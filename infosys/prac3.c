@@ -1,5 +1,5 @@
 // Palindrome Number
-//121
+// 121
 
 // #include<stdio.h>
 // int main()
@@ -39,51 +39,46 @@
 // reverse-
 //-121
 
-#include <stdio.h>
-#include<limits.h>
+// 
 
-int main() {
-    int n;
-    scanf("%d", &n);
-    int original = n;
 
-    if(n<0)
-    {
-       printf("not palin");
-       return 0;
-    }
-    
-    int rev = 0;
-    int digit;
-    
-    
-    
-    
-    while(n>0)
-    {
-       digit = n%10;
-        
-       if (rev > (INT_MAX - digit) / 10) 
-       {
-        printf("not palin");
-        return 0;
-       }
 
-       rev = rev * 10 + digit;
-       n = n/10;
-    }
+
+
+
+
+
+
+
+// Palindrome Number
+// 121
+
+#include<stdio.h>
+int main()
+{
+    
+    long long n = 121;
+    //  scanf("%lld", &n);
+    long long original = n;
+    long long rev = 0;
+    long long digit;
 
    
+   
+    while(n > 0)
+    {
+        digit = n%10;
+        rev = rev * 10 + digit;
+        n = n/10;
+    }
 
     if(original == rev)
     {
-        printf("palin");
-    }
-    else
+        printf("palindrome");
+    }else
     {
-        printf("not palin");
+        printf("not palindrome");
     }
     
-
-    return 0;
+   return 0; 
 }

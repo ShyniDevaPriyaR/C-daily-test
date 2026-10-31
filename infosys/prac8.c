@@ -32,6 +32,9 @@
 // }
 
 
+
+//find lcm
+
 #include<stdio.h>
 int main()
 {
